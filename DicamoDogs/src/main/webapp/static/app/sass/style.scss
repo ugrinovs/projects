@@ -1,0 +1,32 @@
+@import "customVariables";
+@import "../../assets/stylesheets/bootstrap";
+@import "../../assets/stylesheets/bootstrap-compass";
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    background-color: $main-color;
+}
+
+.back-to-top:hover {
+    background-color: darken($main-color, 10%);
+}
+
+.carousel {
+    width: auto;
+    img {
+        height:450px;
+    }
+}
+
+.iframe {
+    position: relative;
+}
+
+.panel-center {
+    float:none;
+    margin: 0 auto;
+}

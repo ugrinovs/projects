@@ -1,0 +1,65 @@
+#sidedrawer {
+  min-width: 200px;
+  height: 100%;
+  display: inline-block;
+  background-color: #354052;
+  transition: transform 0.2s;
+}
+#sidedrawer-brand .mui--text-title {
+  color: #9db2cf;
+}
+
+#sidedrawer > ul li {
+  color: #b9c0ca;
+}
+
+#sidedrawer > ul li a:hover {
+  background-color: #2b3443;
+  color: #fff;
+}
+#sidedrawer > ul > li > ul.dropdown-list {
+  color: #b9c0ca;
+  position: static;
+  text-align: left
+}
+
+#sidedrawer > ul > li > ul.dropdown-list li {
+  background-color: #354052;
+}
+
+.dropdown-list li a {
+  color: #b9c0ca;
+  display: block;
+  text-align: left;
+  padding: 5px 55px;
+
+}
+
+#sidedrawer > ul > li > a {
+  text-align: left;
+  display: block;
+  padding: 10px 35px;
+  color: #b9c0ca;
+}
+
+#sidedrawer ul {
+  list-style: none;
+}
+
+#sidedrawer > ul {
+  padding-left: 0px;
+}
+
+#sidedrawer strong {
+  display: block;
+  padding: 15px 22px;
+  cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+  background-color: #E0E0E0;
+}
+
+#sidedrawer strong + ul > li {
+  padding: 6px 0px;
+}

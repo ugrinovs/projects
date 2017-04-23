@@ -1,0 +1,18 @@
+.collection{
+    border: 0;
+}
+
+nav ul#nav-mobile li {
+    float: none;
+    display: inline-block;
+}
+
+.carousel.carousel-slider{
+    height: 500px !important;
+}
+
+.carousel.carousel-slider img {
+    height: 500px;
+    max-width: 100%;
+    width: auto;
+}

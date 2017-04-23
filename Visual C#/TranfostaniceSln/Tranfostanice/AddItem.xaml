@@ -1,0 +1,19 @@
+﻿<Window x:Class="Tranfostanice.AddItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Tranfostanice"
+        mc:Ignorable="d"
+        Title="AddItem" Height="286" Width="425" MinHeight="320" MinWidth="425">
+    <Grid>
+        <TextBox x:Name="textBoxNazivTrafostanice" HorizontalAlignment="Center" Height="23" Margin="129,72,129,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="labelDodajTrafostanicu" Content="Upiši naziv trafostanice:" HorizontalAlignment="Center" Margin="129,41,129,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonDodajTrafostanicu" Content="Dodaj" HorizontalAlignment="Center" Margin="158,224,158,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.067,-0.394" Click="buttonDodajTrafostanicu_Click"/>
+        <xctk:IntegerUpDown x:Name="textBoxBrojPrekidaca" Margin="129,131,129,0" Height="23" Width="134" HorizontalAlignment="Center" VerticalAlignment="Top" ParsingNumberStyle="Integer" />
+        <ComboBox x:Name="comboBoxIzaberiGrad" HorizontalAlignment="Center" Margin="128,190,130,0" VerticalAlignment="Top" Width="134" SelectionChanged="comboBox_SelectionChanged" Initialized="comboBox_Initialized"/>
+        <Label x:Name="labelBrojPrekidaca" Content="Broj prekidača:" HorizontalAlignment="Center" Margin="148,100,140,0" VerticalAlignment="Top" Height="26" Width="104"/>
+        <Label x:Name="labelNazivGrada" Content="Izaberi grad:" HorizontalAlignment="Center" Margin="158,159,158,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

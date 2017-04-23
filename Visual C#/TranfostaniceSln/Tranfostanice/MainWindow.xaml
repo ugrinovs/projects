@@ -1,0 +1,25 @@
+﻿<Window x:Class="Tranfostanice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tranfostanice"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="1137" Height="297" MinWidth="470" MinHeight="190">
+    <Grid Margin="0,0,2,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="nazivGradaLabel" Content="Izaberi grad:" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="136" FontSize="14"/>
+        <!--<DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="233,41,0,0" VerticalAlignment="Top"/> -->
+        <ComboBox x:Name="comboBoxGradovi" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="136" ItemsSource="{Binding naziv_grada}" Initialized="comboBoxGradovi_Initialized" SelectionChanged="comboBoxGradovi_SelectionChanged" Height="30" FontSize="16"/>
+        <ComboBox x:Name="comboBoxTrafostanica" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="136" ItemsSource="{Binding naziv_trafostanice}" SelectionChanged="comboBoxTrafostanica_SelectionChanged" Height="30" FontSize="14" Visibility="Hidden"/>
+        <Label x:Name="nazivTrafostaniceLabel" Content="Izaberi trafostanicu:" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" FontSize="14" Visibility="Hidden"/>
+        <Label x:Name="transformatorLabel" Content="Izaberi transformator:" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Visibility="Hidden"/>
+        <ComboBox x:Name="comboBoxTransformator" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Height="30" Visibility="Hidden"/>
+        <Button x:Name="buttonNovaTrafostanica" Content="Nova trafostanica" HorizontalAlignment="Right" Margin="0,36,10,0" VerticalAlignment="Top" Width="155" Click="buttonNovaTrafostanica_Click" Height="30" FontSize="14"/>
+        <Button x:Name="buttonNoviTransformator" Content="Novi transformator" HorizontalAlignment="Right" Margin="0,71,10,0" VerticalAlignment="Top" Width="155" Click="buttonNovaTrafostanica_Click" Height="30" FontSize="14"/>
+
+    </Grid>
+</Window>

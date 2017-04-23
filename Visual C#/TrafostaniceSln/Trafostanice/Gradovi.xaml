@@ -1,0 +1,40 @@
+﻿<Page x:Class="Trafostanice.Gradovi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trafostanice"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="Gradovi">
+
+    <Grid>
+        <ComboBox x:Name="comboBoxGradovi" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" FontSize="14" Initialized="comboBoxGradovi_Initialized" SelectionChanged="comboBoxGradovi_SelectionChanged"/>
+        <Label x:Name="labelGradNaziv" Content="Grad:" HorizontalAlignment="Left" Margin="161,10,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label x:Name="labelBrojTrafostanica" Content="Nadjeno trafostanica:" HorizontalAlignment="Left" Margin="161,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelGradRezultat" Content="" HorizontalAlignment="Left" Margin="199,10,0,0" VerticalAlignment="Top" Background="#FFE8E8E8" BorderThickness="1" BorderBrush="#FF252525"/>
+        <Label x:Name="labelBrojTrafostanicaRezultat" Content="" HorizontalAlignment="Left" Margin="284,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.543,0.52"/>
+        <ListBox x:Name="listBoxTrafostaniceRezultat" HorizontalAlignment="Left" Margin="276,73,0,0" VerticalAlignment="Top" BorderThickness="1" MinWidth="150" MinHeight="50" Background="#FFE8E8E8" SelectionChanged="listBoxTrafostaniceRezultat_SelectionChanged"/>
+
+        <Label x:Name="label" Content="Nazivi trafostanica:" HorizontalAlignment="Left" Margin="161,71,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonPrikaziTrafostanicu" Content="Prikaži" HorizontalAlignment="Right" Margin="0,0,10,10" Width="75" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" IsEnabled="False" Click="buttonPrikaziTrafostanicu_Click" Command="{Binding TrafostaniceViewControl}">
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="buttonPrikaziSliku" Content="Otvori sliku" HorizontalAlignment="Right" Margin="0,0,90,10" VerticalAlignment="Bottom" Width="75" Click="buttonPrikaziSliku_Click"/>
+    </Grid>
+</Page>

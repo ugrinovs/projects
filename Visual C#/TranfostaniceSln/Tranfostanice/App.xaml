@@ -1,0 +1,15 @@
+﻿<Application x:Class="Tranfostanice.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Tranfostanice"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type local:MainWindow}">
+            <ContentControl Content="{Binding Trafostanice.MainWindow}" />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:AddItem}">
+            <ContentControl Content="{Binding Trafostanice.AddItem}" />
+        </DataTemplate>
+    </Application.Resources>
+</Application>

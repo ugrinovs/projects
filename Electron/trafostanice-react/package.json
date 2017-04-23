@@ -1,0 +1,30 @@
+{
+  "name": "trafostanice-react",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "classnames": "^2.2.5",
+    "electron": "^1.6.2",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.4",
+    "nedb": "^1.8.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.4",
+    "react-router": "^3.0.4",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

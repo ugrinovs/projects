@@ -1,0 +1,22 @@
+body {
+}
+
+.mdl-layout__header {
+  background-color: #ffecb3;
+}
+
+.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+  border: 2px solid #4db6ac;
+}
+.mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+  background-color: #4db6ac;
+}
+
+.mdl-card {
+  width: auto;
+  min-width: 200px;
+}
+
+.card-align-right {
+  padding-right: 10px;
+}

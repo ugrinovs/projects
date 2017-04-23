@@ -1,0 +1,13 @@
+{
+  "generator-electron-angular": {
+    "appName": "electron-angular",
+    "instalation": "complete",
+    "user": "Stefan",
+    "description": "test application",
+    "angularRoot": "app",
+    "preprocessors": {
+      "css": "sass",
+      "js": "typescript"
+    }
+  }
+}

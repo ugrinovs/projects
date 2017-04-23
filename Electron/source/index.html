@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Electron angular</title>
+    <meta name="description" content="Electron angular">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+    
+    <!-- build:css all.css -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+  </head>
+  <body data-ng-app="app">
+
+    <div id="wrap" data-ui-view></div>
+
+  </body>
+  <!-- with jquery in this case have a trouble namespaces -->
+  <script type="text/javascript">window.jQuery = require('jquery');</script>
+
+  <!-- build:js app.js -->
+
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/PACE/pace.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/restangular/dist/restangular.js"></script>
+  <script src="bower_components/angular-base64/angular-base64.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-ui-scroll/dist/ui-scroll.js"></script>
+  <script src="bower_components/angular-ui-scrollpoint/dist/scrollpoint.js"></script>
+  <script src="bower_components/angular-ui-event/dist/event.js"></script>
+  <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+  <script src="bower_components/angular-ui-validate/dist/validate.js"></script>
+  <script src="bower_components/angular-ui-indeterminate/dist/indeterminate.js"></script>
+  <script src="bower_components/angular-ui-uploader/dist/uploader.js"></script>
+  <script src="bower_components/angular-ui-utils/index.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <!-- endbower -->
+
+  <!-- inject:js -->
+  <script src="../source/scripts/states/home/home.module.js"></script>
+  <script src="../source/scripts/states/home/home.controller.js"></script>
+  <script src="../source/scripts/states/layout.module.js"></script>
+  <script src="../source/scripts/states/layout.controller.js"></script>
+  <script src="../source/scripts/app.js"></script>
+  <script src="../source/scripts/filters/humanize.filter.js"></script>
+  <!-- endinject -->
+
+  <!-- endbuild -->
+
+</html>

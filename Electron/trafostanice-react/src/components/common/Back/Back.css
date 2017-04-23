@@ -1,0 +1,9 @@
+.go-back-btn {
+  background-color: #354052;
+  color: #b9c0ca;
+}
+
+.go-back-btn:hover, .go-back-btn:focus {
+  background-color: #354052;
+  color: #f3f3f3;
+}

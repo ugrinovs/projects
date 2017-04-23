@@ -1,0 +1,15 @@
+{
+  "name": "jhipster",
+  "description": "",
+  "main": "main.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "404133486949",
+    "firebase_url": "https://chatapp-fef05.firebaseio.com",
+    "project_id": "chatapp-fef05",
+    "storage_bucket": "chatapp-fef05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404133486949:android:748e14c7ff2143c2",
+        "android_client_info": {
+          "package_name": "com.justry.example.stefan.justtry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404133486949-oqrqmac3a4kb0dvj15d3fb64b765r7q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnqjABeijeajqtCfh4RrTmGImYXQ3hlF0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

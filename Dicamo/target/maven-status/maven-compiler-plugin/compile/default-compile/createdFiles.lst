@@ -1,0 +1,7 @@
+com\dicamo\controller\ApiPostController.class
+com\dicamo\config\DataBaseConfig.class
+com\dicamo\controller\IndexController.class
+com\dicamo\service\PostService.class
+com\dicamo\model\Post.class
+com\dicamo\repository\PostRepository.class
+com\dicamo\TestData.class

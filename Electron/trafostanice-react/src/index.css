@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body, #root, div.App {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+.collection {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+.collection .collection-item:hover {
+  background-color: #edf2f6;
+}
+.collection .collection-item {
+  padding: 10px 20px;
+  display: block;
+}
+
+.collection .collection-item.collection-item-link:hover {
+  background: transparent;
+}
+
+.collection .collection-item.collection-item-link > a:hover {
+  background-color: #edf2f6;
+}
+
+.collection .collection-item.collection-item-link {
+  padding: 0;
+  min-height: 40px;
+  display: block;
+}
+.collection .collection-item:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .collection-item:last-child {
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius: 4px;
+}
+
+.collection-link {
+  display:block;
+  padding: 10px 20px;
+}
+
+.collection ul {
+  list-style: none;
+}
+.collection ul > li > a {
+  color: #5f646b;
+}
+.collection ul > li > a:hover {
+  background-color: #edf2f6;
+  color: #b1b7bf;
+}
+
+.no-result-message {
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #e57373;
+}
